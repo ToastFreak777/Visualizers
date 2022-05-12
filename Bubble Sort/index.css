@@ -1,0 +1,66 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: normal 1.5em Arial, Helvetica, sans-serif;
+  --bg: lightgray;
+}
+
+body {
+  font: var(--font);
+  background-color: var(--bg);
+}
+
+.form-control {
+  margin: auto;
+  width: 80%;
+  padding: 50px;
+}
+
+.config {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+}
+
+.config div {
+  padding: 5px;
+}
+
+.config legend {
+  font-size: 1.2em;
+  font-weight: italic;
+}
+
+.config label {
+  font-size: 0.8em;
+}
+
+.config input[type="number"] {
+  width: 10%;
+}
+
+.config select {
+  width: 25%;
+}
+
+.config input[type="submit"] {
+  width: 20%;
+  background: rgb(88, 88, 245);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.comment {
+  color: gray;
+  font-size: 0.65em;
+  opacity: 0.8;
+}
