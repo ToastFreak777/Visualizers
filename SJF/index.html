@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bcab42ed12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>FIFO Visualizer</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="err">
+                <span class="err-msg">Input can be no greater than 10 or less than 1!</span>
+            </div>
+            <div class="fifo-box">
+                <ul class="list">
+                    <li class="list-item" id="box0">
+                        <input class="box" value="1" type="number" min="1" max="10" required />
+                    </li>
+                    <li class="list-item" id="box1">
+                        <input class="box" value="1" type="number" min="1" max="10" required />
+                    </li>
+                    <li class="list-item" id="box2">
+                        <input class="box" value="1" type="number" min="1" max="10" required />
+                    </li>
+                    <li class="list-item" id="box3">
+                        <input class="box" value="1" type="number" min="1" max="10" required />
+                    </li>
+                    <li class="list-item" id="box4">
+                        <input class="box" value="1" type="number" min="1" max="10" required />
+                    </li>
+                    <li class="list-item" id="box5">
+                        <input class="box" value="1" type="number" min="1" max="10" required />
+                    </li>
+                </ul>
+            </div>
+            <div class="ui">
+                <h1 id="title">SJF Visualizer</h1>
+                <div class="btns">
+                    <button id="start"><i class="fa-solid fa-play"></i></button>
+                    <button id="add"><i class="fa-solid fa-plus"></i></button>
+                    <button id="random"><i class="fa-solid fa-dice"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="sjf.js"></script>
+</body>
+
+</html>

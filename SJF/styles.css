@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-primary: black;
+  --txt-color-primary: white;
+  --box-shadow: 0 0 25px #c2255c;
+  --btn-play: lime;
+  --btn-rnd: #ff3179;
+  --ff-primary: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color-primary);
+  color: var(--txt-color-primary);
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+}
+
+li {
+  list-style: none;
+}
+
+input[type="number"] {
+  background: transparent;
+  color: var(--txt-color-primary);
+  font-size: 3rem;
+}
+
+#title {
+  animation: rainbow 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff2400;
+  }
+  11% {
+    color: #e81d1d;
+  }
+  22% {
+    color: #e8b71d;
+  }
+  33% {
+    color: #e3e81d;
+  }
+  44% {
+    color: #1de840;
+  }
+  55% {
+    color: #1ddde8;
+  }
+  66% {
+    color: #2b1de8;
+  }
+  77% {
+    color: #dd00f3;
+  }
+  88% {
+    color: #dd00f3;
+  }
+}
+
+h1,
+button {
+  font-size: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#start {
+  color: var(--btn-play);
+}
+
+#add {
+  color: var(--btn-play);
+  display: none;
+}
+
+#random {
+  color: var(--btn-rnd);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  max-width: 1200px;
+  width: 1000px;
+}
+
+.btns #start,
+.btns #add {
+  padding-right: 80px;
+}
+
+.list {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30%;
+  height: 200px;
+  border-bottom: 2px solid var(--txt-color-primary);
+}
+
+.list-item {
+  padding: 20px;
+  position: relative;
+}
+
+.box {
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--btn-rnd);
+  text-align: center;
+}
+
+.box-active {
+  filter: hue-rotate(200deg);
+  animation: slide-up 5s forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+
+.box-finished {
+  filter: hue-rotate(280deg);
+  animation: slide-down 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.err {
+  position: relative;
+  top: 200px;
+  display: none;
+  animation: fade-out 3.5s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.err-msg {
+  font-size: 2rem;
+  color: red;
+  text-transform: uppercase;
+}
