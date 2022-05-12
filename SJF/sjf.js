@@ -39,57 +39,6 @@ addJob.addEventListener("click", () => {
   });
 });
 
-// play.addEventListener("click", async () => {
-//   play.style.display = "none";
-//   addJob.style.display = "inline";
-//   if (!inputValid()) {
-//     err.style.display = "inline";
-//     setTimeout(() => {
-//       err.style.display = "none";
-//     }, 3000);
-
-//     return;
-//   }
-
-//   try {
-//     while (!jobFinished()) {
-//       console.log("Starting job...");
-//       await start(() => sJF());
-//       console.log("Finished");
-//     }
-//   } catch (e) {
-//     console.log(e);
-//   }
-//   addJob.style.display = "none";
-//   play.style.display = "inline";
-// });
-
-// function start(func) {
-//   console.log("working");
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve(func());
-//     }, 1000);
-//   });
-// }
-
-// function sJF() {
-//   const data = btns.map((btn) => (btn = btn.value));
-//   const results = data.reduce((curr, next) => {
-//     let job = curr;
-//     if (Number(curr) <= 0) {
-//       job = next;
-//       return job;
-//     }
-//     if (Number(curr) > Number(next) && !Number(next) == 0) job = next;
-//     return job;
-//   });
-//   const index = data.indexOf(results);
-//   activeJob(btns[index], index);
-//   btns[index].value = Number(results) - 1;
-//   buttonFinished(btns[index], index);
-// }
-
 play.addEventListener("click", async () => {
   if (!inputValid()) {
     err.style.display = "inline";
