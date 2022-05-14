@@ -9,6 +9,10 @@
 :root {
   --font: normal 1.5em Arial, Helvetica, sans-serif;
   --bg: lightgray;
+  --low: cyan;
+  --medium: rgb(0, 255, 0);
+  --high: rgb(255, 230, 0);
+  --extreme: rgb(255, 94, 0);
 }
 
 body {
@@ -63,4 +67,42 @@ body {
   color: gray;
   font-size: 0.65em;
   opacity: 0.8;
+}
+
+.underline {
+  border: 3px solid rgb(56, 42, 42);
+  display: none;
+}
+
+.content-list {
+  display: flex;
+  justify-content: center;
+}
+
+.list-item {
+  list-style: none;
+  margin: 0.5em;
+  padding: 5px 2px;
+  border: 2px inset white;
+  min-height: 20px;
+  height: auto;
+  width: 1.3em;
+  color: black;
+}
+
+@keyframes comparing {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2) translate(0px, 50px);
+    width: 4.5%;
+  }
+}
+
+.active-list-item {
+  animation: 0.5s linear 1 normal comparing;
+  animation-fill-mode: forwards;
+  border: 2px outset white;
 }
