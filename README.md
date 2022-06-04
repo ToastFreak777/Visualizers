@@ -28,7 +28,7 @@ Visual Helper
 
 ## React Sorting Algorithms
 
-- To get some react practice I decided to do the rest to the algorithms in react. Rather then swapping elements using DOM in react you use State
+- To get some react practice I decided to do the rest to the algorithms in react. Rather then swapping elements using DOM I'll use react and State
 
 - ### Contains
   - Bubble Sort
