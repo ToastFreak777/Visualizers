@@ -1,8 +1,5 @@
 //helper functions
-const swap = (array, a, b) => {
-  [array[a], array[b]] = [array[b], array[a]];
-  return array;
-};
+import swap from "./helpers";
 
 const SelectionSort = (array, pos, arrSteps, colorSteps) => {
   var i, j, target;
