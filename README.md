@@ -33,7 +33,7 @@ Visual Helper
 - ### Contains
   - Bubble Sort
   - Selection Sort
-  - (FUTURE) Insertion Sort
+  - Insertion Sort
   - (FUTURE) Merge Sort
   - (FUTURE) Quick Sort
   - (FUTURE) Heap Sort
