@@ -98,6 +98,10 @@ class App extends Component {
   };
 
   changeAlgorithm = (e) => {
+    if (e.target.value === "Insertion Sort") {
+      this.setState({ delay: 500 });
+    }
+
     this.setState(
       {
         arraySteps: [this.state.arraySteps[0]],
