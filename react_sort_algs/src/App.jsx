@@ -98,6 +98,7 @@ class App extends Component {
   };
 
   changeAlgorithm = (e) => {
+    // Adjusting delay to make visual more clear
     if (e.target.value === "Insertion Sort") {
       this.setState({ delay: 500 });
     }
