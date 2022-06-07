@@ -1,0 +1,110 @@
+::before,
+::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightblue;
+}
+
+.app {
+  text-align: center;
+}
+.frame {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+.card {
+  border-radius: 2em;
+  padding: 0 1em;
+  background-color: #eee;
+}
+.controller {
+  background: #555;
+  margin: 0 1em;
+  border: 1px solid;
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controller-buttons {
+  height: 4em;
+  width: 15em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel-config select,
+.panel-config .config {
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 2em;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid gray;
+}
+.panel-config select {
+  margin: 0.5em;
+}
+.panel-config select:hover {
+  border: 2px solid rgba(73, 73, 240, 1);
+}
+.config input {
+  text-align: center;
+  width: 5em;
+  height: 2em;
+  background: #eee;
+  margin: 0.5em;
+}
+.config-form {
+  background: #eee;
+  background: transparent;
+  border-radius: 2em;
+  width: 200px;
+}
+.config-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2em;
+  padding: 1em 0;
+}
+.config-wrapper button {
+  border-radius: 2em;
+  padding: 0.5em;
+  width: 100px;
+}
+.form-options input {
+  margin: 0.5em;
+  border-radius: 2em;
+  width: 50%;
+  text-align: center;
+}
