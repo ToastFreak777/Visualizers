@@ -3,4 +3,4 @@ const swap = (array, a, b) => {
   return array;
 };
 
-export default swap;
+export { swap };

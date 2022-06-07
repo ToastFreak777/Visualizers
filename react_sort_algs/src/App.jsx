@@ -29,7 +29,7 @@ class App extends Component {
     colorKey: [],
     colorSteps: [],
     currentStep: 0,
-    count: 10,
+    count: 12,
     delay: 100,
     algorithm: "Bubble Sort",
     timeouts: [],
@@ -101,6 +101,8 @@ class App extends Component {
     // Adjusting delay to make visual more clear
     if (e.target.value === "Insertion Sort") {
       this.setState({ delay: 500 });
+    } else if (e.target.value === "Merge Sort") {
+      this.setState({ delay: 400 });
     }
 
     this.setState(

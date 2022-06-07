@@ -1,5 +1,5 @@
 //helper functions
-import swap from "./helpers";
+import { swap } from "./helpers";
 
 const InsertionSort = (array, pos, arrSteps, colorSteps) => {
   var i;

@@ -34,6 +34,6 @@ Visual Helper
   - Bubble Sort
   - Selection Sort
   - Insertion Sort
-  - (FUTURE) Merge Sort
+  - Merge Sort (Will adjust animations in future)
   - (FUTURE) Quick Sort
   - (FUTURE) Heap Sort

@@ -1,5 +1,5 @@
 //helper functions
-import swap from "./helpers";
+import { swap } from "./helpers";
 
 const BubbleSort = (array, pos, arrSteps, colorSteps) => {
   var i, j, swapped;
