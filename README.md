@@ -37,3 +37,9 @@ Visual Helper
   - Merge Sort (Will adjust animations in future)
   - (FUTURE) Quick Sort
   - (FUTURE) Heap Sort
+
+# React Search ALgorithms
+
+- ### Contains
+  - Linear Search
+  - Binary Search
