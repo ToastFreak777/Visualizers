@@ -12,6 +12,7 @@ import Ball from "./components/Ball";
 
 // Algorithms
 import LinearSearch from "./algorithms/Ls";
+import BinarySearch from "./algorithms/Bs";
 
 // React imports
 import React, { Component } from "react";
@@ -33,7 +34,7 @@ class App extends Component {
 
   ALGORITHMS = {
     "Linear Search": LinearSearch,
-    "Binary Search": undefined,
+    "Binary Search": BinarySearch,
   };
 
   componentDidMount() {
@@ -87,14 +88,28 @@ class App extends Component {
   };
 
   changeAlgorithm = (e) => {
-    this.setState(
-      {
-        arraySteps: [this.state.arraySteps[0]],
-        colorSteps: [this.state.colorKey],
-        algorithm: e.target.value,
-      },
-      () => this.generateSteps()
-    );
+    if (e.target.value === "Binary Search") {
+      this.setState(
+        {
+          array: this.state.array.sort((a, b) => a - b),
+          arraySteps: [this.state.arraySteps[0]],
+          colorSteps: [this.state.colorKey],
+          algorithm: e.target.value,
+          delay: 800,
+        },
+        () => this.generateSteps()
+      );
+    } else {
+      this.setState(
+        {
+          array: this.state.array,
+          arraySteps: [this.state.arraySteps[0]],
+          colorSteps: [this.state.colorKey],
+          algorithm: e.target.value,
+        },
+        () => this.generateSteps()
+      );
+    }
   };
 
   previousStep = () => {
