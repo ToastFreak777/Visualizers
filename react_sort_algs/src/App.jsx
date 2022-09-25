@@ -101,7 +101,10 @@ class App extends Component {
     // Adjusting delay to make visual more clear
     if (e.target.value === "Insertion Sort") {
       this.setState({ delay: 500 });
-    } else if (e.target.value === "Merge Sort") {
+    } else if (
+      e.target.value === "Merge Sort" ||
+      e.target.value === "Quick Sort"
+    ) {
       this.setState({ delay: 400 });
     }
 
